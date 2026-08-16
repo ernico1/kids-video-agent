@@ -1,0 +1,51 @@
+agent:
+  name: Kids Video Agent
+  version: 0.1.0
+
+generation:
+  target_duration_min: 30
+  target_duration_max: 90
+  scenes_min: 3
+  scenes_max: 6
+
+themes:
+  - jardin magique
+  - chambre coloree
+  - parc enchante
+  - plage joyeuse
+  - foret des jouets
+
+animals:
+  - lapin
+  - chat
+  - chien
+  - oiseau
+  - elephant
+  - lionceau
+  - girafe
+
+toys:
+  - ballon rouge
+  - cube jaune
+  - voiture verte
+  - peluche rose
+  - puzzle colore
+
+colors:
+  - rouge, jaune, bleu
+  - vert, orange, rose
+  - bleu, violet, jaune
+
+style:
+  image_size: 1024x1024
+  fps: 24
+
+voice:
+  voice_id: Rachel
+  model: eleven_multilingual_v2
+
+safety:
+  no_violence: true
+  no_fear: true
+  always_happy_ending: true
+  max_words_per_voiceover: 8
