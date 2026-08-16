@@ -9,19 +9,29 @@ Agent Python qui fabrique une courte video originale et coloree pour enfants de 
 3. `voiceover.py` produit la voix off.
 4. `editor.py` assemble les scenes en MP4.
 
-## Installation locale
+## Methode rapide (recommandee)
 
 ```bash
 pip install -r requirements.txt
 export OPENAI_API_KEY="..."
 export ELEVENLABS_API_KEY="..."
+python run_all.py
+```
+
+La video finale est `output/kids_video.mp4`.
+
+## Methode detaillee (etape par etape)
+
+```bash
+pip install -r requirements.txt
+export OPENAI_API_KEY="..."
+export ELEVENLABS_API_KEY="..."
+
 python screenwriter.py
 python art_director.py
 python voiceover.py
 python editor.py
 ```
-
-La video finale est `output/kids_video.mp4`.
 
 ## GitHub Actions
 
