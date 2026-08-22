@@ -1,51 +1,25 @@
-agent:
-  name: Kids Video Agent
-  version: 0.1.0
+# Configuration de l'agent de g\u00e9n\u00e9ration vid\u00e9o
+# Remplacez les valeurs <VOTRE_XXX> par vos cl\u00e9s API
 
-generation:
-  target_duration_min: 30
-  target_duration_max: 90
-  scenes_min: 3
-  scenes_max: 6
+openai:
+  api_key: "${OPENAI_API_KEY}"  # Utiliser les variables d'environnement
+  model: "gpt-4o-mini"
+  temperature: 0.7
 
-themes:
-  - jardin magique
-  - chambre coloree
-  - parc enchante
-  - plage joyeuse
-  - foret des jouets
+elevenlabs:
+  api_key: "${ELEVENLABS_API_KEY}"
+  voice_id: "EXAVITQu4vr4xnSDxMaL"  # Voix par d\u00e9faut (Bella)
 
-animals:
-  - lapin
-  - chat
-  - chien
-  - oiseau
-  - elephant
-  - lionceau
-  - girafe
+replicate:
+  api_key: "${REPLICATE_API_KEY}"
+  model: "black-forest-labs/flux-schnell"
 
-toys:
-  - ballon rouge
-  - cube jaune
-  - voiture verte
-  - peluche rose
-  - puzzle colore
+video:
+  resolution: "1920x1080"
+  fps: 30
+  duration_per_image: 5
+  output_format: "mp4"
 
-colors:
-  - rouge, jaune, bleu
-  - vert, orange, rose
-  - bleu, violet, jaune
-
-style:
-  image_size: 1024x1024
-  fps: 24
-
-voice:
-  voice_id: Rachel
-  model: eleven_multilingual_v2
-
-safety:
-  no_violence: true
-  no_fear: true
-  always_happy_ending: true
-  max_words_per_voiceover: 8
+language:
+  default: "fr"
+  supported: ["fr", "en", "es", "ar", "wo"]
